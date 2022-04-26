@@ -4,11 +4,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-
     <div class="container">
       <nav class="navbar">
         <RouterLink to="/" class="navbar-item">Home</RouterLink>
         <RouterLink to="/about" class="navbar-item">About</RouterLink>
+        <RouterLink to="/lista" class="navbar-item">Lsta</RouterLink>
       </nav>
     </div>
   </header>
@@ -18,7 +18,5 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style>
-@import '@/assets/css/main.css';
-
-
+@import "@/assets/css/main.css";
 </style>
