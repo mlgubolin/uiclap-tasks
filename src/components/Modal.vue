@@ -1,10 +1,19 @@
-<template>
+<script setup lang='ts'>
+import Message from './Message.vue';
+const emit = defineEmits<{
+    (e: 'click', id: boolean): void
+}>()
 
-    <div class="modal" >
+</script>
+
+<template>
+    <div class="modal">
         <div class="modal-background"></div>
         <div class="modal-content">
-           <slot></slot>
+            <Message messageClass="message-body">
+                <slot></slot>
+            </Message>
         </div>
-        <button class="modal-close is-large" aria-label="close"></button>
+        <button class="modal-close is-large" aria-label="close" @click="emit('click', false)"></button>
     </div>
 </template>
