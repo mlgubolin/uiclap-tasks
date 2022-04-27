@@ -11,7 +11,11 @@ console.log(items)
         <ul>
             <li v-for="item in items" :key="item.value">
                 {{ item.label }}
-                <i :class="item.icon"></i>
+                &nbsp;&nbsp;
+                <span>
+                    Icon Placeholder:
+                    <code>{{ item.icon }}</code>
+                </span>
             </li>
         </ul>
     </div>
